@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: azure;
+    animation: roll 15s linear 0.5s infinite;
 }
 
 .ball {
@@ -34,4 +35,13 @@ body {
 
 .ellipse3 {
     transform: rotate(90deg);
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
